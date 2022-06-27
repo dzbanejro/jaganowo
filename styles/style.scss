@@ -397,7 +397,7 @@ ul {
 	overflow: hidden;
 	z-index: 99 !important;
 }
-.sticky {	
+.sticky {
 	background-color: var(--background_10);
 	position: fixed;
 	top: 0;
@@ -543,26 +543,21 @@ ul {
 	width: 900px;
 	height: 500px;
 }
-
-
-#slide{
-	width:96%;
-	}
-	
+#slide {
+	width: 96%;
+}
 * {
 	box-sizing: border-box
 }
 .mySlides {
 	display: none
 }
-
 .slideshow-container {
 	width: auto;
 	position: relative;
 	margin: -10px;
-
 }
-/* Next & previous buttons */
+
 .prev, .next {
 	cursor: pointer;
 	top: 50%;
@@ -578,16 +573,16 @@ ul {
 .prev {
 	float: left;
 }
-/* Position the "next button" to the right */
+
 .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
-/* Caption text */
+
 .text {
 	color: #f2f2f2;
 	font-size: 15px;
@@ -598,7 +593,6 @@ ul {
 	text-align: center;
 }
 
-/* The dots/bullets/indicators */
 .dot {
 	cursor: pointer;
 	height: 13px;
@@ -612,7 +606,7 @@ ul {
 .active, .dot:hover {
 	background-color: #494B55;
 }
-/* Fading animation */
+
 .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 2s;
@@ -620,24 +614,30 @@ ul {
 	animation-duration: 2s;
 }
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
 }
-
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+	.text {
+		font-size: 11px
+	}
 }
-
-.pics
-{
-    border:3px solid #494B55;
-    width:200px;
+.pics {
+	border: 3px solid #494B55;
+	width: 200px;
 }
 .ss-container {
 	padding-top: 130px;
@@ -675,37 +675,37 @@ ul {
 	height: 50px;
 }
 @keyframes trollrgb {
-    0%{
-        background-color: white;
-    }
-    10%{
-        background-color: aqua;
-    }
-    20%{
-        background-color: blue;
-    }
-    30%{
-        background-color: violet;
-    }
-    40%{
-        background-color: red;
-    }
-    50%{
-        background-color: greenyellow;
-    }
-    60%{
-        background-color: yellow;
-    }
-    70%{
-        background-color: orange;
-    }
-    80%{
-        background-color: purple;
-    }
-    90%{
-        background-color: paleturquoise;
-    }
-    100%{
-        background-color: black;
-    }
+	0% {
+		background-color: white;
+	}
+	10% {
+		background-color: aqua;
+	}
+	20% {
+		background-color: blue;
+	}
+	30% {
+		background-color: violet;
+	}
+	40% {
+		background-color: red;
+	}
+	50% {
+		background-color: greenyellow;
+	}
+	60% {
+		background-color: yellow;
+	}
+	70% {
+		background-color: orange;
+	}
+	80% {
+		background-color: purple;
+	}
+	90% {
+		background-color: paleturquoise;
+	}
+	100% {
+		background-color: black;
+	}
 }
