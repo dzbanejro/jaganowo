@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Gryf Jaganowo</title>
+	<link href="logo.png" rel="icon" type="image/x-icon">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body class="normalmode">
+	<div id="enitretroll">
+		<div id="trolltext">
+			<h1>Nie chcę już tego motywu</h1>
+			<button type="button" onclick="endtroll()" class="buttontroll">Zmień motyw</button>
+			<p><span></span></p>
+		</div>
+	<div id="entire">
+	<nav id="navbar" class="sticky">
+		<div class="other">
+			<p>GRYF JAGANOWO</p>
+		</div>
+		<div class="help">
+			<div class="gear">
+				<div id="nav-container">
+					<div class="bg"></div>
+					<div class="button" tabindex="0">
+						<img alt="" class="img" id="gearimg" src="gear_black.png">
+						<p>ustawienia</p>
+					</div>
+					<div id="nav-content" tabindex="0">
+						<h1>Tylko gryf jaganowo</h1><img alt="" class="skull" id="skullimg" src="skull_black.png">
+						<h2 id="mode-text"><span>Zmień motyw strony</span></h2><button class="dark-mode-toggle" id="dark-mode-toggle"><svg viewbox="0 0 496 496" width="100%" xmlns="http://www.w3.org/2000/svg">
+						<path class="primaryColor" d="M8,256C8,323,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,4" style="fill: none"></path></svg></button>
+						<h4 id="actual-mode">Aktualny motyw:</h4>
+						<h4 id="dark">Ciemny</h4>
+						<h4 id="light">Jasny</h4>
+						<h3 id="troll-text">Dodatkowy motyw czeka na ciebie!</h3><button class="troll-mode-toggle" id="troll-mode-toggle"><svg viewbox="0 0 496 496" width="100%" xmlns="http://www.w3.org/2000/svg">
+						<path class="primaryColor" d="M8,256C8,323,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,4" style="fill: none"></path></svg></button>
+						<h3 id="troll" onclick="troll()" >Nie możesz się zdecydować?</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ham">
+			<div class="user">
+				<div class="column"><img alt="" class="img" id="userimg" src="user_black.png"></div>
+				<p>konto</p>
+			</div>
+			<div class="cart">
+				<div class="column"><img alt="" class="img" id="cartimg" src="cart1.png"></div>
+				<p>koszyk</p>
+			</div>
+		</div>
+		<div class="nav">
+			<a href="">
+			<h2>Strona główna</h2></a> <a href="">
+			<h2>Kontakt</h2></a> <a href="">
+			<h2>Aktualności</h2></a> <a href="index.html"><img alt="logo najelepszego klubu" id="logo" src="darklogo.png"></a> <a href="">
+			<h2>Sklep kibica</h2></a> <a href="">
+			<h2>Historia klubu</h2></a> <a href="">
+			<h2>Zawodnicy</h2></a>
+		</div>
+	</nav>
+	<div id="nextpage">
+		<div class="ss-container">
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<div class="mySlides fade">
+				<img alt="" src="baner1.png" id="bnr1img">
+			</div>
+			<div class="mySlides fade">
+				<img alt="" src="baner2.png" id="bnr2img">
+			</div>
+			<div class="mySlides fade">
+				<img alt="" src="baner3.png" id="bnr3img">
+			</div>
+			<div class="mySlides fade">
+				<img alt="" src="baner4.png" id="bnr4img">
+			</div>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		
+		<!--    Putting in the click dots   -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+
+
+		
+		
+	</div>
+	<div id="nextpage-2">
+		
+	</div>
+</div>
+</div>
+	<script src="script.js">
+	</script> 
+	<script src="lightmode.js">
+	</script> 
+	<script src="slider.js">
+	</script>
+	
+</body>
+</html>

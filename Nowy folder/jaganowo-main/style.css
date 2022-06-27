@@ -1,0 +1,187 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding:0;
+    margin:0;
+    border:0;
+}
+header{
+    width:100%;
+    height:100px;
+    background-color:#1c1f26;
+    color:#f7e00a;
+}
+.logo{
+    position:absolute;
+    height:100px;
+    width:100px;
+    left:45%;
+}
+header ul{
+    position:absolute;
+    right:50%;
+}
+header ol{
+    margin-top:10px;
+}
+.user{
+    left:10px;
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:30px;
+}
+.cart{
+    position:absolute;
+    top:30px;
+    right:100px;
+    width:40px;
+    height:40px;
+}
+.menu{
+    font-size: 20px;
+    line-height:130px;
+    display:flex;
+}
+aside{
+    margin-left:160px;
+}
+.sklepik{
+    margin-left:90px;
+}
+.aktualnosci{
+    margin-right:50px;
+}
+.pasek{
+    background-color: #f7e00a;
+    width:100%;
+    height:10px;
+    margin:0;
+}
+#slider{
+    width:100%;
+    height:600px;
+}
+#slider img{
+    width:100%;
+    height:600px;
+}
+.guwno{
+    width:100%;
+    height:100px;
+    margin:0;
+}
+#gallery{
+    border:solid #f7e00a 3px;
+    margin-left:25%;
+    width:50%;
+    height:600px;
+}
+.ogloszenie{
+    position:absolute;
+
+}
+.ogloszenie img{
+    width:565px;
+}
+.mecz{
+    float:right;
+}
+.kubki{
+    position:absolute;
+    left:479px;
+    bottom:-455px;
+}
+.kubki img{
+    border-right:solid gray 1px;
+    border-top:solid gray 1px;
+    height:269px;
+    width:560px;
+}
+.guwno2{
+    margin:0;
+    width:100%;
+    height:50px;
+}
+.wyprzedaz{
+    border-top:solid #f7e00a 3px;
+    margin:0;
+    text-align:center;
+    font-weight: bolder;
+    color:#f7e00a;
+    font-size:30px;
+}
+#sale{
+    display:flex;
+    width:1500px;
+    height:500px;
+    margin-left:250px;
+}
+#sale img{
+    border:solid gray 1px;
+    padding:20px;
+    width:80%;
+    height:400px;
+}
+#sale p{
+    color:#f7e00a;
+    font-weight: bold;
+    font-size:22px;
+}
+#container{
+    background-color: #1c1f26;
+    width:99,99%;
+    height:700px;
+    border-left:solid #f7e00a 3px;
+    border-right:solid #f7e00a 3px;
+    border-bottom:solid #f7e00a 3px;
+}
+.guwno3{
+    margin:0;
+    width:100%;
+    height:200px;
+}
+footer{
+    width:100%;
+    height:800px;
+}
+.container{
+    margin-top:70px;
+    margin-left:29%;
+    width:800px;
+    height:450px;
+    border:solid #f7e00a 3px;
+}
+#contact{
+    justify-content: center;
+    text-align:center;
+    width:100%;
+    height:150px;
+    display: flex;
+}
+#contact p{
+    font-size:20px;
+}
+.adres{
+    width:300px;
+    margin-left:80px;
+    margin-right:80px;
+    background-color: #f7e00a;
+}
+.store{
+    width:300px;
+    margin-left:80px;
+    margin-right:80px;
+    background-color: #f7e00a;
+}
+.kontakt{
+    width:300px;
+    margin-left:80px;
+    margin-right:80px;
+    background-color: #f7e00a;
+}
+.stopka{
+    background-color: gray;
+    width:100%;
+    height:150px;
+    margin-top:100px;
+}
