@@ -35,10 +35,11 @@
 }
 
 .trollmode {
-  --clr-color_1: pink;
+  --clr-color_1: white;
 }
 
 * {
+  outline: 1px solid limegreen !important;
   font-family: var(--ff-font_1);
   padding: 0;
   margin: 0;
@@ -184,16 +185,6 @@ strong {
   font-weight: 600;
 }
 
-.page {
-  width: 100%;
-  height: 100vh;
-  background: #fdfdfd;
-  font-family: var(--ff-font_2);
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  color: var(--clr-color_2);
-}
-
 main {
   padding: 70px 20px 0;
   display: flex;
@@ -249,6 +240,9 @@ main small {
 #nav-container:focus-within #nav-content {
   transform: none;
 }
+#nav-container:focus-within #nav-troll {
+  transform: none;
+}
 
 .button {
   position: relative;
@@ -295,7 +289,7 @@ main small {
   margin-top: 5px;
 }
 
-#nav-content {
+#nav-content, #nav-troll {
   margin-top: 63px;
   padding: 20px;
   width: 100%;
@@ -312,28 +306,28 @@ main small {
   will-change: transform;
   contain: paint;
 }
-#nav-content ul {
+#nav-content ul, #nav-troll ul {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-#nav-content li a {
+#nav-content li a, #nav-troll li a {
   padding: 10px 5px;
   display: block;
   text-transform: uppercase;
   transition: color 0.1s;
 }
-#nav-content li a:hover {
+#nav-content li a:hover, #nav-troll li a:hover {
   color: var(--clr-color_3);
 }
-#nav-content li:not(.small) + .small {
+#nav-content li:not(.small) + .small, #nav-troll li:not(.small) + .small {
   margin-top: auto;
 }
-#nav-content h2 {
+#nav-content h2, #nav-troll h2 {
   padding-top: 30px;
   font-size: 20px;
 }
-#nav-content span {
+#nav-content span, #nav-troll span {
   border-top: 5px solid var(--clr-color_9);
   padding-top: 20px;
 }
@@ -434,11 +428,11 @@ ul {
   text-decoration: underline;
 }
 
-#nav-content h1 {
+#nav-content, #nav-troll h1 {
   color: var(--clr-color_9);
 }
 
-#nav-content h2 {
+#nav-content, #nav-troll h2 {
   color: var(--clr-color_9);
 }
 
@@ -511,7 +505,7 @@ ul {
   height: 30px;
 }
 
-#nav-content h4 {
+#nav-content, #nav-troll h4 {
   color: var(--clr-color_9);
 }
 
@@ -692,72 +686,55 @@ ul {
 
 @-webkit-keyframes trollrgb {
   0% {
-    background-color: white;
-  }
-  10% {
-    background-color: aqua;
-  }
-  20% {
-    background-color: blue;
-  }
-  30% {
-    background-color: violet;
-  }
-  40% {
     background-color: red;
   }
-  50% {
-    background-color: greenyellow;
-  }
-  60% {
-    background-color: yellow;
-  }
-  70% {
-    background-color: orange;
-  }
-  80% {
-    background-color: purple;
-  }
-  90% {
-    background-color: paleturquoise;
-  }
   100% {
-    background-color: black;
+    background-color: red;
   }
 }
 
 @keyframes trollrgb {
   0% {
-    background-color: white;
-  }
-  10% {
-    background-color: aqua;
-  }
-  20% {
-    background-color: blue;
-  }
-  30% {
-    background-color: violet;
-  }
-  40% {
     background-color: red;
   }
-  50% {
-    background-color: greenyellow;
-  }
-  60% {
-    background-color: yellow;
-  }
-  70% {
-    background-color: orange;
-  }
-  80% {
-    background-color: purple;
-  }
-  90% {
-    background-color: paleturquoise;
-  }
   100% {
-    background-color: black;
+    background-color: red;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* 	0% {
+		background-color: white;
+	}
+	10% {
+		background-color: aqua;
+	}
+	20% {
+		background-color: blue;
+	}
+	30% {
+		background-color: violet;
+	}
+	40% {
+		background-color: red;
+	}
+	50% {
+		background-color: greenyellow;
+	}
+	60% {
+		background-color: yellow;
+	}
+	70% {
+		background-color: orange;
+	}
+	80% {
+		background-color: purple;
+	}
+	90% {
+		background-color: paleturquoise;
+	}
+	100% {
+		background-color: black;
+	}
+
+POPRAWIC TROLLMODE PRZY ODSWIEZANIU 
+
+	*//*# sourceMappingURL=style.css.map */

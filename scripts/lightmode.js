@@ -3,9 +3,6 @@ const darkModeToggle = document.querySelector('#dark-mode-toggle');
 const enableDarkMode = () => {
 	document.body.classList.remove('normalmode')
 	document.body.classList.add('darkmode');
-	if (document.body.classList.contains = 'trollmode') {
-		document.body.classList.remove('trollmode');
-	}
 	document.getElementById("light").style.display = "none"
 	document.getElementById("dark").style.display = "initial"
 	document.getElementById("bnr1img").src = "images/baner1.png"
@@ -22,9 +19,6 @@ const enableDarkMode = () => {
 const disableDarkMode = () => {
 	document.body.classList.remove('darkmode');
 	document.body.classList.add('normalmode');
-	if (document.body.classList.contains = 'trollmode') {
-		document.body.classList.remove('trollmode');
-	}
 	document.getElementById("bnr1img").src = "images/baner1_white.png";
 	document.getElementById("bnr2img").src = "images/baner2_white.png";
 	document.getElementById("bnr3img").src = "images/baner3_white.png";

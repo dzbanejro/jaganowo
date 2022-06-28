@@ -33,9 +33,10 @@
 	--background_11: black;
 }
 .trollmode {
-	--clr-color_1: pink;
+	--clr-color_1: white;
 }
 * {
+	outline: 1px solid limegreen !important;
 	font-family: var(--ff-font_1);
 	padding: 0;
 	margin: 0;
@@ -155,8 +156,10 @@ details {
 	padding-right: 15px;
 }
 .img {
+	
 	width: 30px;
 	height: 30px;
+	
 }
 .gear {
 	p {
@@ -169,15 +172,6 @@ details {
 }
 strong {
 	font-weight: 600;
-}
-.page {
-	width: 100%;
-	height: 100vh;
-	background: #fdfdfd;
-	font-family: var(--ff-font_2);
-	font-weight: 600;
-	letter-spacing: 0.03em;
-	color: var(--clr-color_2);
 }
 main {
 	padding: 70px 20px 0;
@@ -235,6 +229,9 @@ main {
 		#nav-content {
 			transform: none;
 		}
+		#nav-troll {
+			transform: none;
+		}
 	}
 }
 .button {
@@ -283,7 +280,7 @@ main {
 		}
 	}
 }
-#nav-content {
+#nav-content, #nav-troll {
 	margin-top: 63px;
 	padding: 20px;
 	width: 100%;
@@ -418,10 +415,10 @@ ul {
 		text-decoration: underline;
 	}
 }
-#nav-content h1 {
+#nav-content, #nav-troll h1 {
 	color: var(--clr-color_9);
 }
-#nav-content h2 {
+#nav-content, #nav-troll h2 {
 	color: var(--clr-color_9);
 }
 .btn-group {
@@ -484,7 +481,7 @@ ul {
 	width: 30px;
 	height: 30px;
 }
-#nav-content h4 {
+#nav-content, #nav-troll h4 {
 	color: var(--clr-color_9);
 }
 #dark {
@@ -648,6 +645,14 @@ ul {
 }
 @keyframes trollrgb {
 	0% {
+		background-color: red;
+	}
+	100% {
+		background-color: red;
+	}
+} 
+
+/* 	0% {
 		background-color: white;
 	}
 	10% {
@@ -680,4 +685,7 @@ ul {
 	100% {
 		background-color: black;
 	}
-} 
+
+POPRAWIC TROLLMODE PRZY ODSWIEZANIU 
+
+	*/
