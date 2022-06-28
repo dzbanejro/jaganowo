@@ -49,6 +49,12 @@ const whiteImages = () => {
 }
 if (document.body.classList == 'normalmode') {
 	whiteImages();
+	document.getElementById("light").style.display = "initial";
+	document.getElementById("dark").style.display = "none";
+}
+if (document.body.classList == 'darkmode') {
+	document.getElementById("light").style.display = "none"
+	document.getElementById("dark").style.display = "initial"
 }
 darkModeToggle.addEventListener('click', () => {
 	darkMode = localStorage.getItem('darkMode');

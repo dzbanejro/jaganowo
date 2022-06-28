@@ -44,8 +44,14 @@ function troll() {
 		document.getElementById("dark-mode-toggle").style.display = "unset"
 		document.getElementById("mode-text").style.display = "inherit"
 		document.getElementById("actual-mode").style.display = "inherit"
-		document.getElementById("dark").style.display = "none"
-		document.getElementById("light").style.display = "none"
+		if (document.body.classList == 'normalmode') {
+			document.getElementById("light").style.display = "initial";
+			document.getElementById("dark").style.display = "none";
+		}
+		if (document.body.classList == 'darkmode') {
+			document.getElementById("light").style.display = "none"
+			document.getElementById("dark").style.display = "initial"
+		}
 		document.getElementById("troll").style.marginTop = "50px"
 		document.getElementById("troll").innerHTML = "Nie możesz się zdecydować?"
 		first_click = true;
