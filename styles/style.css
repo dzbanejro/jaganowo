@@ -39,7 +39,6 @@
 }
 
 * {
-  outline: 1px solid limegreen !important;
   font-family: var(--ff-font_1);
   padding: 0;
   margin: 0;
@@ -298,7 +297,7 @@ main small {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-100%);
+  /*transform: translateX(-100%);*/
   background-color: var(--background_10);
   pointer-events: auto;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -324,12 +323,12 @@ main small {
   margin-top: auto;
 }
 #nav-content h2, #nav-troll h2 {
-  padding-top: 30px;
+  padding-top: 10px;
   font-size: 20px;
 }
 #nav-content span, #nav-troll span {
   border-top: 5px solid var(--clr-color_9);
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .small {
@@ -547,7 +546,7 @@ ul {
 }
 
 #mode-text span {
-  padding-top: 20px;
+  padding-top: 10px;
   display: initial;
 }
 
@@ -666,6 +665,14 @@ ul {
     opacity: 1;
   }
 }
+#trollerror {
+  display: none;
+  opacity: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  width: 100%;
+}
+
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px;
@@ -734,7 +741,31 @@ ul {
 	100% {
 		background-color: black;
 	}
+*/
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
-POPRAWIC TROLLMODE PRZY ODSWIEZANIU 
+#solvetext {
+  color: var(--clr-color_9);
+}
 
-	*//*# sourceMappingURL=style.css.map */
+#inputnumber {
+  display: none;
+}
+
+#solvetext {
+  display: none;
+}
+
+#firsttask {
+  display: none;
+}
+
+#secondtask {
+  display: none;
+}
+
+#thirdtask {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

@@ -58,3 +58,4 @@ darkModeToggle.addEventListener('click', () => {
 		disableDarkMode();
 	}
 });
+
