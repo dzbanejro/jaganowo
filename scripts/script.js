@@ -85,22 +85,32 @@ function troll() {
 
 function trollactive() {
 	if (first_click == false) {
-		document.getElementById("trollerror").style.display = "inherit";
-		document.getElementById("trollerror").style.opacity = "1"
+		document.getElementById("trollerror").style.opacity = "1";
+		document.getElementById("trollerror").style.transition = "ease-in, 0s";
 		if (document.getElementById("trollerror").style.opacity == "1") {
 			setTimeout(() => {
-				document.getElementById("trollerror").style.opacity = "0"
+				document.getElementById("trollerror").style.transition = "ease-out, 0.5s";
+				document.getElementById("trollerror").style.opacity = "0";
 			}, 3000);
-			setTimeout(() => {
-				document.getElementById("trollerror").style.display = "none"
-			}, 3500);
 		}
 	}
 }
+const tryagain = () => {
+	document.getElementById("tryagain").style.opacity = "1";
+	document.getElementById("tryagain").style.transition = "ease-in, 0s";
+	if (document.getElementById("tryagain").style.opacity == "1") {
+		setTimeout(() => {
+			document.getElementById("tryagain").style.transition = "ease-out, 1s";
+			document.getElementById("tryagain").style.opacity = "0";
+		}, 2000);
+	}
+}
 const commandendtroll = () => {
-	document.getElementById("inputnumber").style.display = "none"
-	document.getElementById("solvetext").style.display = "none"
-	document.getElementById("nav-troll").style.height = "400px"
+	document.getElementById("inputnumber").style.display = "none";
+	document.getElementById("solvetext").style.display = "none";
+	document.getElementById("nav-troll").style.height = "400px";
+	document.getElementById("tryagain").style.opacity = "0";
+	document.getElementById("trollerror").style.opacity = "0";
 	disableTrollMode();
 	realendtroll();
 }
@@ -111,25 +121,26 @@ const clearinput = () => {
 }
 const invalidinput = () => {
 	clearinput();
-	document.getElementById("firsttask").style.display = "none"
-	document.getElementById("secondtask").style.display = "none"
-	document.getElementById("thirdtask").style.display = "none"
+	tryagain();
+	document.getElementById("firsttask").style.display = "none";
+	document.getElementById("secondtask").style.display = "none";
+	document.getElementById("thirdtask").style.display = "none";
 	number++
-	if (number >= 3) {
-		number = 0
+	if (number >= 4) {
+		number = 0;
 	}
 	if (number == 0) {
 		number++
 	}
 	console.log(number);
 	if (number == 1) {
-		document.getElementById("firsttask").style.display = "inherit"
+		document.getElementById("firsttask").style.display = "inherit";
 	}
 	if (number == 2) {
-		document.getElementById("secondtask").style.display = "inherit"
+		document.getElementById("secondtask").style.display = "inherit";
 	}
 	if (number == 3) {
-		document.getElementById("thirdtask").style.display = "inherit"
+		document.getElementById("thirdtask").style.display = "inherit";
 	}
 }
 var numberacces = 1;
@@ -150,7 +161,7 @@ function answer() {
 				if (emptyinputfix == 1) {
 					numberacces = 0;
 					invalidinput();
-					console.log("zle1")
+					console.log("failed verification (try number: 1)");
 				}
 			}
 		}
@@ -166,7 +177,7 @@ function answer() {
 			if (input.value !== 3) {
 				if (emptyinputfix == 1) {
 					numberacces = 0;
-					console.log("zle2")
+					console.log("failed verification (try number: 2)");
 					invalidinput();
 				}
 			}
@@ -183,20 +194,17 @@ function answer() {
 			if (input.value !== 4) {
 				if (emptyinputfix == 1) {
 					numberacces = 0;
-					console.log("zle3")
+					console.log("failed verification (try number: 3)");
 					invalidinput();
 				}
 			}
 		}
 	}
-	if (number >= 3) {
-		number = 0
-	}
 }
 if (trollMode === 'enabled') {
 	enableTrollMode();
 }
-let number = 0
+let number = 0;
 let input = document.getElementById("inputnumber");
 trollModeToggle.addEventListener('click', () => {
 	trollMode = localStorage.getItem('trollMode');
@@ -204,26 +212,26 @@ trollModeToggle.addEventListener('click', () => {
 		enableTrollMode();
 	} else {
 		if (document.getElementById("nav-troll")) {
-			document.getElementById("firsttask").style.display = "none"
-			document.getElementById("secondtask").style.display = "none"
-			document.getElementById("thirdtask").style.display = "none"
-			document.getElementById("inputnumber").style.display = "initial"
-			document.getElementById("solvetext").style.display = "inherit"
-			document.getElementById("solvetext").style.marginTop = "20px"
-			document.getElementById("nav-troll").style.height = "700px"
+			document.getElementById("firsttask").style.display = "none";
+			document.getElementById("secondtask").style.display = "none";
+			document.getElementById("thirdtask").style.display = "none";
+			document.getElementById("inputnumber").style.display = "initial";
+			document.getElementById("solvetext").style.display = "inherit";
+			document.getElementById("solvetext").style.marginTop = "20px";
+			document.getElementById("nav-troll").style.height = "700px";
 			if (number >= 3) {
-				number = 0
+				number = 0;
 			}
 			number++;
 			console.log(number)
 			if (number == 1) {
-				document.getElementById("firsttask").style.display = "inherit"
+				document.getElementById("firsttask").style.display = "inherit";
 			}
 			if (number == 2) {
-				document.getElementById("secondtask").style.display = "inherit"
+				document.getElementById("secondtask").style.display = "inherit";
 			}
 			if (number == 3) {
-				document.getElementById("thirdtask").style.display = "inherit"
+				document.getElementById("thirdtask").style.display = "inherit";
 			}
 		}
 	}

@@ -36,7 +36,6 @@
 	--clr-color_1: white;
 }
 * {
-	
 	font-family: var(--ff-font_1);
 	padding: 0;
 	margin: 0;
@@ -156,10 +155,8 @@ details {
 	padding-right: 15px;
 }
 .img {
-	
 	width: 30px;
 	height: 30px;
-	
 }
 .gear {
 	p {
@@ -289,7 +286,7 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	/*transform: translateX(-100%);*/
+	transform: translateX(-100%);
 	background-color: var(--background_10);
 	pointer-events: auto;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -554,7 +551,6 @@ ul {
 	position: relative;
 	margin: -10px;
 }
-
 .prev, .next {
 	cursor: pointer;
 	top: 50%;
@@ -570,16 +566,13 @@ ul {
 .prev {
 	float: left;
 }
-
 .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
-
 .prev:hover, .next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
 }
-
 .text {
 	color: #f2f2f2;
 	font-size: 15px;
@@ -589,7 +582,6 @@ ul {
 	width: 100%;
 	text-align: center;
 }
-
 .dot {
 	cursor: pointer;
 	height: 13px;
@@ -603,7 +595,6 @@ ul {
 .active, .dot:hover {
 	background-color: #494B55;
 }
-
 .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 2s;
@@ -626,16 +617,10 @@ ul {
 		opacity: 1
 	}
 }
-
 #trollerror {
-	display: none;
-	opacity: 1;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+	opacity: 0;
 	width: 100%;
 }
-
-
 @media only screen and (max-width: 300px) {
 	.text {
 		font-size: 11px
@@ -654,14 +639,6 @@ ul {
 }
 @keyframes trollrgb {
 	0% {
-		background-color: red;
-	}
-	100% {
-		background-color: red;
-	}
-} 
-
-/* 	0% {
 		background-color: white;
 	}
 	10% {
@@ -694,15 +671,13 @@ ul {
 	100% {
 		background-color: black;
 	}
-*/
+}
 input[type=number]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
-  }
-
+}
 #solvetext {
 	color: var(--clr-color_9);
 }
-
 #inputnumber {
 	display: none;
 }
@@ -717,4 +692,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 #thirdtask {
 	display: none;
+}
+#tryagain {
+	opacity: 0;
 }
