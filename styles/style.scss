@@ -21,6 +21,7 @@
 	--background_9: lightgrey;
 	--background_10: #ececec;
 	--background_11: black;
+	--background_12: #bfbfbf;
 }
 .darkmode {
 	--clr-color_1: #212121;
@@ -31,18 +32,19 @@
 	--background_7: #1c1f26;
 	--background_10: #1c1f30;
 	--background_11: black;
+	--background_12: #18191c;
 }
 .trollmode {
 	--clr-color_1: white;
 }
 * {
+	visibility: visible;
 	font-family: var(--ff-font_1);
 	padding: 0;
 	margin: 0;
 	border: 0;
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	/*outline: 1px solid limegreen !important;*/
 }
 nav {
 	background-color: var(--background_7);
@@ -53,13 +55,6 @@ nav {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	a {
-		text-align: center;
-		text-decoration: none;
-		color: var(--clr-color_2);
-		width: 200px;
-		font-size: 20px;
-	}
 	h2 {
 		height: 30px;
 		font-size: 20px;
@@ -91,9 +86,16 @@ nav {
 		}
 	}
 }
+.nav-content {
+	text-align: center;
+		text-decoration: none;
+		color: var(--clr-color_2);
+		width: 200px;
+		font-size: 20px;
+}
 #logo {
 	width: 90px;
-	height: 85px;
+	height: 80px;
 	background-size: cover;
 }
 .other {
@@ -117,13 +119,16 @@ nav {
 	color: var(--clr-color_9);
 	text-align: center;
 }
-.help {
+.hamleft {
 	text-align: center;
-	padding-right: 100px;
-	padding-top: 26px;
 	width: 248.05px;
+	height: 83px;
 	float: left;
-}
+	color: var(--clr-color_1);
+	display: inline-flex;
+	padding-right: 100px;
+	padding-top: 21px;
+	float: left;}
 details {
 	align-items: center;
 	margin: 0 auto;
@@ -133,26 +138,22 @@ details {
 	width: fit-content;
 	float: right;
 }
-.ham {
-	color: var--(clr-color_1);
-	display: flex;
+.hamright {
+	color: var(--clr-color_1);
+	display: inline-flex;
 	padding-right: 100px;
 	padding-top: 21px;
 	float: right;
 }
-.user {
+.cart, .user {
+	padding-bottom: 10px;
 	color: var(--clr-color_2);
 	cursor: pointer;
 	text-align: center;
 	padding-left: 15px;
 	padding-right: 15px;
-}
-.cart {
-	color: var(--clr-color_2);
-	cursor: pointer;
-	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
+	position: relative;
+	bottom: 5px;
 }
 .img {
 	width: 30px;
@@ -205,9 +206,6 @@ main {
 		transition: 0.3s;
 		background: #000;
 	}
-	* {
-		visibility: visible;
-	}
 	&:focus-within {
 		.button {
 			pointer-events: none;
@@ -241,19 +239,18 @@ main {
 	border: 0;
 	background: transparent;
 	border-radius: 0;
-	height: 70px;
+	height: 52px;
 	width: 30px;
 	cursor: pointer;
 	pointer-events: auto;
-	margin-left: 25px;
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	align-items: center;
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
 	width: fit-content;
-	padding-bottom: 20px;
-	margin-left: 100px;
+	margin-left: 6.5%;
+	bottom: 5px;
 	p {
 		padding-top: 5px;
 		cursor: pointer;
@@ -381,7 +378,7 @@ ul {
 }
 #nextpage {
 	width: 100%;
-	height: calc(100vh - 115px);
+	height: 100vh;
 	background-color: var(--background_9);
 }
 .normal {
@@ -530,8 +527,9 @@ ul {
 }
 #nextpage-2 {
 	width: 100%;
-	height: 100vh;
-	background-color: var(--background_9);
+	height: 50vh;
+	background-color: var(--background_12);
+	border: 1px var(--background_3);
 }
 .ss-container img {
 	width: 1200px;
@@ -539,9 +537,6 @@ ul {
 }
 #slide {
 	width: 96%;
-}
-* {
-	box-sizing: border-box
 }
 .mySlides {
 	display: none
