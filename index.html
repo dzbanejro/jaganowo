@@ -5,6 +5,7 @@
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Gryf Jaganowo</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<link href="images/logo.png" rel="icon" type="image/x-icon">
 	<link href="styles/style.css" rel="stylesheet">
 </head>
@@ -35,13 +36,14 @@
 						<h3 id="solvetext">Rozwiąż te zadanie:</h3>
 						<h2 id="firsttask">1<sup>2</sup> + 2<sup>4</sup></h2>
 						<h2 id="secondtask">&#8730;9</h2>
-						<h2 id="thirdtask">log<sub>2</sub>16</h2><input id="inputnumber" onblur="answer()" type="number">
+						<h2 id="thirdtask">log<sub>2</sub>16</h2><input id="inputnumber" onblur="answer()" type="number" required>
 						<h2 id="tryagain">Spróbuj ponownie</h2>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="hamright">
+			<div class="hamright-content">
 			<div class="user">
 				<div class="column"><img alt="" class="img" id="userimg" src="images/user_black.png"></div>
 				<p>konto</p>
@@ -50,6 +52,7 @@
 				<div class="column"><img alt="" class="img" id="cartimg" src="images/cart1.png"></div>
 				<p>koszyk</p>
 			</div>
+		</div>
 		</div>
 		<div class="nav">
 			<a href="index.html" class="nav-content">
@@ -74,7 +77,39 @@
 			<span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span>
 		</div>
 	</div>
-	<div id="nextpage-2"></div>
+	<div id="nextpage-2">
+		<div id="slider-container">
+			
+		<div class="container">
+            <div id="slider">
+                <ul class="slides">
+                    <li class="slide slide1"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide slide2"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide slide3"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide slide4"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide slide5"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide slide1"><img src="images/warning.png" alt="warning"></li>
+                </ul>
+            </div>
+        </div>
+		
+		<div class="container2">
+            <div id="slider2">
+                <ul class="slides2">
+                    <li class="slide2 slide12"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide2 slide22"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide2 slide32"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide2 slide42"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide2 slide52"><img src="images/warning.png" alt="warning"></li>
+                    <li class="slide2 slide12"><img src="images/warning.png" alt="warning"></li>
+                </ul>
+            </div>
+        </div>
+		<h1>WYPRZEDAŻ</h1>
+	</div>
+	
+	
+	</div>
 	<script src="scripts/script.js">
 	</script> 
 	<script src="scripts/lightmode.js">
