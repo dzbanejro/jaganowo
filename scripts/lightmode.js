@@ -14,6 +14,18 @@ const enableDarkMode = () => {
 	document.getElementById("userimg").src = "images/user.png";
 	document.getElementById("cartimg").src = "images/cart2.png";
 	document.getElementById("logo").src = "images/logo.png";
+	document.getElementById("warning1").src = "images/warning.png"
+	document.getElementById("warning2").src = "images/warning.png"
+	document.getElementById("warning3").src = "images/warning.png"
+	document.getElementById("warning4").src = "images/warning.png"
+	document.getElementById("warning5").src = "images/warning.png"
+	document.getElementById("warning6").src = "images/warning.png"
+	document.getElementById("warning7").src = "images/warning.png"
+	document.getElementById("warning8").src = "images/warning.png"
+	document.getElementById("warning9").src = "images/warning.png"
+	document.getElementById("warning10").src = "images/warning.png"
+	document.getElementById("warning11").src = "images/warning.png"
+	document.getElementById("warning12").src = "images/warning.png"
 	localStorage.setItem('darkMode', 'enabled');
 }
 const disableDarkMode = () => {
@@ -30,6 +42,18 @@ const disableDarkMode = () => {
 	document.getElementById("userimg").src = "images/user_black.png";
 	document.getElementById("cartimg").src = "images/cart1.png";
 	document.getElementById("logo").src = "images/darklogo.png";
+	document.getElementById("warning1").src = "images/warning_white.png"
+	document.getElementById("warning2").src = "images/warning_white.png"
+	document.getElementById("warning3").src = "images/warning_white.png"
+	document.getElementById("warning4").src = "images/warning_white.png"
+	document.getElementById("warning5").src = "images/warning_white.png"
+	document.getElementById("warning6").src = "images/warning_white.png"
+	document.getElementById("warning7").src = "images/warning_white.png"
+	document.getElementById("warning8").src = "images/warning_white.png"
+	document.getElementById("warning9").src = "images/warning_white.png"
+	document.getElementById("warning10").src = "images/warning_white.png"
+	document.getElementById("warning11").src = "images/warning_white.png"
+	document.getElementById("warning12").src = "images/warning_white.png"
 	localStorage.setItem('darkMode', null);
 }
 if (darkMode === 'enabled') {
@@ -40,6 +64,18 @@ const whiteImages = () => {
 	document.getElementById("bnr2img").src = "images/baner2_white.png";
 	document.getElementById("bnr3img").src = "images/baner3_white.png";
 	document.getElementById("bnr4img").src = "images/baner4_white.png";
+	document.getElementById("warning1").src = "images/warning_white.png"
+	document.getElementById("warning2").src = "images/warning_white.png"
+	document.getElementById("warning3").src = "images/warning_white.png"
+	document.getElementById("warning4").src = "images/warning_white.png"
+	document.getElementById("warning5").src = "images/warning_white.png"
+	document.getElementById("warning6").src = "images/warning_white.png"
+	document.getElementById("warning7").src = "images/warning_white.png"
+	document.getElementById("warning8").src = "images/warning_white.png"
+	document.getElementById("warning9").src = "images/warning_white.png"
+	document.getElementById("warning10").src = "images/warning_white.png"
+	document.getElementById("warning11").src = "images/warning_white.png"
+	document.getElementById("warning12").src = "images/warning_white.png"
 }
 if (document.body.classList == 'normalmode') {
 	whiteImages();

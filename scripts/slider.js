@@ -58,67 +58,58 @@ function currentSlide(index) {
 	dots[index - 1].className += " active";
 	timer = setTimeout(showSlides, 4000);
 }
-
 'use strict';
-
 $(function() {
-    var width = 720;
-    var animationSpeed = 500;
-    var currentSlide = 1;
+	var width = 720;
+	var animationSpeed = 600;
+	var currentSlide = 1;
+	var $slider = $('#slider');
+	var $slideContainer = $('.slides', $slider);
+	var $slides = $('.slide', $slider);
+	var interval;
 
-    var $slider = $('#slider');
-    var $slideContainer = $('.slides', $slider);
-    var $slides = $('.slide', $slider);
+	function startSlider() {
+		interval = setInterval(function() {
+			$slideContainer.animate({
+				'margin-left': '-=' + width
+			}, animationSpeed, function() {
+				if (++currentSlide === $slides.length) {
+					currentSlide = 1;
+					$slideContainer.css('margin-left', 0);
+				}
+			});
+		});
+	}
 
-    var interval;
-
-    function startSlider() {
-        interval = setInterval(function() {
-            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-                if (++currentSlide === $slides.length) {
-                    currentSlide = 1;
-                    $slideContainer.css('margin-left', 0);
-                }
-            });
-        });
-    }
-    function pauseSlider() {
-        clearInterval(interval);
-    }
-
- 
-    startSlider();
-
-
+	function pauseSlider() {
+		clearInterval(interval);
+	}
+	startSlider();
 });
-
 $(function() {
-    var width = 720;
-    var animationSpeed = 500;
-    var currentSlide = 1;
+	var width = 720;
+	var animationSpeed = 600;
+	var currentSlide = 1;
+	var $slider = $('#slider2');
+	var $slideContainer = $('.slides2', $slider);
+	var $slides = $('.slide2', $slider);
+	var interval;
 
-    var $slider = $('#slider2');
-    var $slideContainer = $('.slides2', $slider);
-    var $slides = $('.slide2', $slider);
+	function startSlider() {
+		interval = setInterval(function() {
+			$slideContainer.animate({
+				'margin-left': '-=' + width
+			}, animationSpeed, function() {
+				if (++currentSlide === $slides.length) {
+					currentSlide = 1;
+					$slideContainer.css('margin-left', 0);
+				}
+			});
+		});
+	}
 
-    var interval;
-
-    function startSlider() {
-        interval = setInterval(function() {
-            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-                if (++currentSlide === $slides.length) {
-                    currentSlide = 1;
-                    $slideContainer.css('margin-left', 0);
-                }
-            });
-        });
-    }
-    function pauseSlider() {
-        clearInterval(interval);
-    }
-
- 
-    startSlider();
-
-
+	function pauseSlider() {
+		clearInterval(interval);
+	}
+	startSlider();
 });

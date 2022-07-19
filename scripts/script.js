@@ -240,3 +240,8 @@ if (document.getElementById("nav-troll")) {
 	starttroll();
 	document.getElementById("troll").setAttribute('onclick', 'trollactive()');
 }
+var hoverele = document.getElementsByClassName("learn-more")
+hoverele.onmouseover = function() {
+	console.log("mamdowna")
+}
+hoverele.onmouseout = function() {}
