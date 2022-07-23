@@ -14,6 +14,7 @@ const enableDarkMode = () => {
 	document.getElementById("userimg").src = "images/user.png";
 	document.getElementById("cartimg").src = "images/cart2.png";
 	document.getElementById("logo").src = "images/logo.png";
+	document.getElementById("vsimg").src = "images/vs.png";
 	document.getElementById("warning1").src = "images/warning.png"
 	document.getElementById("warning2").src = "images/warning.png"
 	document.getElementById("warning3").src = "images/warning.png"
@@ -54,6 +55,7 @@ const disableDarkMode = () => {
 	document.getElementById("warning10").src = "images/warning_white.png"
 	document.getElementById("warning11").src = "images/warning_white.png"
 	document.getElementById("warning12").src = "images/warning_white.png"
+	document.getElementById("vsimg").src = "images/vs_white.png"
 	localStorage.setItem('darkMode', null);
 }
 if (darkMode === 'enabled') {
@@ -76,6 +78,7 @@ const whiteImages = () => {
 	document.getElementById("warning10").src = "images/warning_white.png"
 	document.getElementById("warning11").src = "images/warning_white.png"
 	document.getElementById("warning12").src = "images/warning_white.png"
+	document.getElementById("vsimg").src = "images/vs_white.png"
 }
 if (document.body.classList == 'normalmode') {
 	whiteImages();

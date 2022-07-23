@@ -9,6 +9,7 @@
 	--clr-color_8: white;
 	--clr-color_9: black;
 	--clr-color_10: white;
+	
 	--ff-font_1: "Roboto Condensed", sans-serif;
 	--ff-font_2: "Encode Sans Condensed", sans-serif;
 	--background_1: #1c1f26;
@@ -23,6 +24,7 @@
 	--background_10: #ececec;
 	--background_11: black;
 	--background_12: #bfbfbf;
+	--background_13: #ececec;
 }
 .darkmode {
 	--clr-color_1: #212121;
@@ -35,6 +37,7 @@
 	--background_10: #1c1f30;
 	--background_11: black;
 	--background_12: #18191c;
+	--background_13: #141415;
 }
 .trollmode {
 	--clr-color_1: white;
@@ -758,9 +761,51 @@ input[type=number]::-webkit-inner-spin-button {
 	font-weight: bold;
 	color: var(--clr-color_2);
 }
-#nextpage-3 {
+
+#nextpage-4 {
+	background-color: var(--background_12);
 	width: 100%;
-	height: 100vh;
+	height: 50vh;
+		#newspage {
+			padding-top: 40px;
+		width: 65%;
+		margin: 0 auto;
+		height: 80%;
+			h1 {
+				padding-top: 10px;
+				color: var(--clr-color_2);
+				float: left;
+			}
+		}
+}
+#nextpage-5 {
+	width: 100%;
+	height: 50vh;
+	#infopage {
+		padding-top: 40px;
+	width: 65%;
+	margin: 0 auto;
+	height: 80%;
+	h1, h2 {
+		color: var(--clr-color_2);
+		
+	}
+	}
+}
+.fronttext {
+	float: left;
+	
+}
+.stadiontext {
+	font-size: 25px;
+	padding-top: 40px;
+}
+.stadionlocation {
+	font-size: 20px;
+	padding-top: 5px;
+}
+.jaganowostore {
+	float: right;
 }
 .offer {
 	float: left;
@@ -862,4 +907,120 @@ input[type=number]::-webkit-inner-spin-button {
 			color: var(--clr-color_2);
 		}
 	}
+}
+.btn-1 {
+	margin: 0 auto;
+	display: flex;
+	margin-top: 20px;
+    background: var(--background_12);
+    color: var(--clr-color_2);
+    cursor: pointer;
+	border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+    width: auto;
+    position: relative;
+    &:hover {
+		background: var(--background_13);
+        transition: all 0.5s;
+    }
+	a {
+		padding: 1rem;
+	}
+}
+.btn-2 {
+	margin: 0 auto;
+	display: flex;
+	margin-top: 20px;
+    background: var(--background_10);
+    color: var(--clr-color_2);
+    cursor: pointer;
+	border-radius: 10px;
+    font-size: 20px;
+	transition: background-color 0.5s;
+    width: auto;
+    position: relative;
+    &:hover {
+		background-color: var(--background_9);
+        transition: all 0.5s;
+    }
+	a {
+		padding: 1rem;
+	}
+}
+.btn-3 {
+	margin: 0 auto;
+	display: flex;
+	margin-top: 20px;
+    background: var(--background_12);
+    color: var(--clr-color_2);
+    cursor: pointer;
+	border-radius: 10px;
+    font-size: 20px;
+	transition: background-color 0.5s;
+    width: auto;
+    position: relative;
+    &:hover {
+		background-color: var(--background_13);
+        transition: all 0.5s;
+    }
+	a {
+		padding: 1rem;
+	}
+}
+#matchpage {
+	padding-top: 20px;
+	width: 65%;
+	margin: 0 auto;
+}
+#nextpage-3 {
+	width: 100%;
+	height: 40vh;
+	h1, h4 {
+		color: var(--clr-color_2);
+	}
+}
+.nextmatchtext {
+	padding-top: 20px;
+	font-size: 26px;
+}
+.nextmatchtime {
+	color: var(--clr-color_7);
+	opacity: 1;
+	padding-top: 5px;
+	font-size: 15px;
+}
+.nextmatchbattle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.vs  {
+	margin-left: 200px;
+	margin-right: 200px;
+	width: 100px;
+	height: 100px;
+	
+}
+.ksg, .psg {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+.funnytext {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-top: 25px;
+	margin-right: auto;
+	width: 500px;
+	height: 60px;
+}
+.ksgimg {
+	width: 100px;
+	height: 100px;
+}
+.psgimg {
+	width: 100px;
+	height: 100px;
 }
